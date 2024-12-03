@@ -99,7 +99,8 @@ function Register() {
         success.style.display = "flex"
         setTimeout(function() {
             success.style.display = "none";
+            window.location.href = "login.html"
         }, 1000);
-        window.location.href = "login.html"
+        
     }
 }
