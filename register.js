@@ -100,5 +100,6 @@ function Register() {
         setTimeout(function() {
             success.style.display = "none";
         }, 1000);
+        window.location.href = "login.html"
     }
 }
