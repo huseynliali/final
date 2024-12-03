@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+
+    
+.son {
+    border: 1px solid black;
+    width: 15vw;
+    height: 40vh;
+    margin-right: 30px;
+    margin-left: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 12px;
+}
+.son img {
+    width: 200px;
+    height: 150px;
+}
+.myson {
+    border: 1px solid black;
+    width: 15vw;
+    height: 40vh; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 12px;
+}
+.myson img {
+    width: 200px;
+    height: 150px;
+}
+.imgdiv {
+    display: flex;
+    justify-content: center;
+}
+.btndiv {
+    display: flex;
+    justify-content: center;
+}
+.btndiv button {
+    width: 75px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: aqua;
+    cursor: pointer;
+    margin-top: 10px;
+} 
+ .compscont { 
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    width: 100vw;
+    height: 83vh;
+ }
+.container {
+    display: flex;
+    position: relative;
+}
+
+.comps {
+    border: 1px solid black;
+    margin-left: 100px;
+    height: 82.5vh; 
+    width: 0vw; 
+    display: flex;
+    flex-wrap: wrap; 
+    background-image: url(https://media.istockphoto.com/id/1388166973/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%B0%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%82%D0%BD%D1%8B%D0%B9-%D0%B1%D0%B5%D0%BB%D1%8B%D0%B9-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B9%D0%BD%D1%8B%D0%B9-%D1%84%D0%BE%D0%BD-%D0%B4%D0%BB%D1%8F-%D0%BF%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D0%B8-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0-%D0%BF%D1%83%D1%81%D1%82%D0%B0%D1%8F-%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%B0-%D1%81-%D1%82%D0%B5%D0%BD%D1%8F%D0%BC%D0%B8-%D0%BE%D0%BA%D0%BD%D0%B0-%D0%B8.jpg?b=1&s=612x612&w=0&k=20&c=ES7nOvJzVT5G-3TjmdjL9ww9RXgQ9jaiT5YcUGZ3Ing=);
+    background-size: cover;
+    width: 100%; 
+    min-height: 10vh;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+    overflow: hidden; 
+    transition: height 0.3s ease; 
+}
+.info {
+    padding-left: 15px;
+}
+.homepage {
+    width: 100px;
+    height: 35px;
+    border-radius: 4px;
+    border: none;
+    background-color: #ffc400;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.homediv {
+    border-bottom: solid 1px lightgray;
+    padding: 10px;
+}
+input {
+    height: 30px;
+    width: 345px;
+    margin-left: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+}
+input:focus {
+    border: 1px solid rgba(255, 223, 0, 0.8);
+    box-shadow: 0px 0px 5px rgba(255, 223, 0, 0.5); 
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+.inp {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 17px;
+}
+.ad {
+    display: flex;
+}
+.tesvir {
+    display: flex;
+}
+.qiymet {
+    display: flex;
+}
+.yeni {
+    display: flex;
+}
+.telefon {
+    display: flex;
+}
+.list button {
+    padding: 5px;
+    border: 0.5px solid lightgray;
+    background-color: transparent;
+    width: 350px;
+    height: 50px;
+    cursor: pointer; 
+}
+button.active {
+    background-color: #b0b0b0; 
+    color: #fff; 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.05); 
+}
+button:hover {
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.03);
+}
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-info p {
+    font-size: 16px;
+}

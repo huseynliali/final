@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Home</title>
+</head>
+<body>
+    <div class="parent">
+        <div id="success-message" class="success">Uğurlu giriş!</div>
+        <div id="logout-message" class="success">Uğurlu çıxış!</div>
+        <div class="buttons">
+            <button class="computers">Komputerlərim</button>
+            <button class="buysell">Komputer alış-verişinə başla</button>
+            <button class="login">Hesaba daxil olmaq</button>
+            <button onclick="Logout()" class="logout">Hesabdan çıxmaq</button>
+        </div>
+        <div class="divh1">
+            <h1>İstifadəçi Adı:</h1><h1 class="user">Giriş etməlisiniz</h1>
+        </div>
+        <div class="slideparent">
+            <div class="slide">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://touchpoint.bg/wp-content/uploads/prodajba-i-serviz-2-2000x1200.webp"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="font-size: 1.5rem;">Mac OS</h5>
+                                <p style="font-size: 1rem;">Mac OS X succeeded classic Mac OS, the primary Macintosh operating system from 1984 to 2001.
+                                    Its underlying architecture came from NeXT's NeXTSTEP, as a result of Apple's acquisition of
+                                    NeXT, which also brought Steve Jobs back to Apple.  </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjr_ezLhH5K4w-fE4rDFUQ6OWmdsJ0cCiNlecenVNUh1C-bPRa6H8xq5L6rAJPTuU-x9ISPc9YvqDEQQAUgnJzyI60ao9DisOB0izk5jZrsmbA43_to4PmyCzWik0Jjq6y9FrfsI_axSVJaxHSgsnck4UZ3NA_p4NPsLCOh9SLPZ95-YTAvZhV_5TL-=s16000"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="font-size: 1.5rem;">Asus</h5>
+                                <p style="font-size: 1rem;">At ASUS, we are constantly striving for innovation, including in terms of your interaction
+                                    with our OLED displays. That's why we're excited to introduce ASUS Lumina OLED, a new
+                                    generation of laptop displays with unprecedented image quality. ASUS Lumina OLED displays
+                                    are the perfect choice for professionals, gamers and generally all users who crave only the
+                                    best.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://news.lenovo.com/wp-content/uploads/2023/03/11_B_Lenovo_LOQ_15IRH8_Closeup_Port.jpg"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="font-size: 1.5rem;">Lenovo</h5>
+                                <p style="font-size: 1rem;">The NVIDIA ® GeForce RTX ™ 40 Series mobile video card offers incredible possibilities for
+                                    gamers and creative people. It is based on the ultra-productive NVIDIA ® Ada Lovelace
+                                    architecture, which provides a fantastic increase in the speed and quality of graphics based
+                                    on artificial intelligence technologies. Discover realistic virtual worlds thanks to the
+                                    support of ray tracing technology, significantly increase productivity without sacrificing
+                                    image quality with DLSS 3 technology. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="home.js"></script>
+</body>
+</html>

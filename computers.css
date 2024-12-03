@@ -1,0 +1,28 @@
+input:focus {
+    outline: none;
+    border-color: rgba(15, 15, 205, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 139, 0.5);
+}
+input {
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+select {
+    border: 1px solid black;
+    border-radius:5px ;
+}
+#nameError {
+    margin: 0;
+}
+.h2 {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    align-items: center;
+}
+.showimg {
+    width: 250px;
+    height: 150px;
+    margin-top: 10px;
+}

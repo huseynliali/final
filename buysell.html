@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="buysell.css">
+    <title>Alış-Veriş</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="homediv"><button class="homepage">Əsas səhifə</button></div><br>
+        <div class="inp"><input id="searchInput" placeholder="Axtarış" type="text"></div>
+        <div class="container">
+            <div class="list">
+                <div class="list">
+                    <button class="asus" onclick="setActive(this)">Asus</button>
+                    <button class="hp" onclick="setActive(this)">HP</button>
+                    <button class="acer" onclick="setActive(this)">Acer</button>
+                    <button class="dell" onclick="setActive(this)">Dell</button>
+                    <button class="lenovo" onclick="setActive(this)">Lenovo</button>
+                    <button class="mac" onclick="setActive(this)">MacBook</button>
+                    <button class="samsung" onclick="setActive(this)">Samsung</button>
+                </div>                
+            </div>
+            <div class="compscont">
+                <div class="comps">
+                    <div class="son">
+                        <div class="imgdiv"><img class="img" src="image.png" alt="Photo"></div><br>
+                        <div class="info">
+                        <div class="ad"><p >Ad:</p><p class="name"></p></div>  
+                        <div class="tesvir"><p >Təsvir:</p><p class="none"></p></div>   
+                        <div class="qiymet"><p >Qiymət:</p><p class="price"></p></div>    
+                        <div class="yeni"><p >Yeni:</p><p class="new"></p></div>    
+                        <div class="telefon"><p >Telefon:</p><p class="phone"></p></div>    
+                        </div>
+                        <div class="btndiv"><button>Ətraflı</button></div>
+                    </div>
+                    <div class="son">
+                        <div class="imgdiv"><img class="img" src="image.png" alt="Photo"></div><br>
+                        <div class="info">
+                        <div class="ad"><p >Ad:</p><p class="name"></p></div>  
+                        <div class="tesvir"><p >Təsvir:</p><p class="none"></p></div>   
+                        <div class="qiymet"><p >Qiymət:</p><p class="price"></p></div>    
+                        <div class="yeni"><p >Yeni:</p><p class="new"></p></div>    
+                        <div class="telefon"><p >Telefon:</p><p class="phone"></p></div>    
+                        </div>
+                        <div class="btndiv"><button>Ətraflı</button></div>
+                    </div>
+                    <div class="son">
+                        <div class="imgdiv"><img class="img" src="image.png" alt="Photo"></div><br>
+                        <div class="info">
+                        <div class="ad"><p >Ad:</p><p class="name"></p></div>  
+                        <div class="tesvir"><p >Təsvir:</p><p class="none"></p></div>   
+                        <div class="qiymet"><p >Qiymət:</p><p class="price"></p></div>    
+                        <div class="yeni"><p >Yeni:</p><p class="new"></p></div>    
+                        <div class="telefon"><p >Telefon:</p><p class="phone"></p></div>    
+                        </div>
+                        <div class="btndiv"><button>Ətraflı</button></div>
+                    </div>
+                    <div class="son">
+                        <div class="imgdiv"><img class="img" src="image.png" alt="Photo"></div><br>
+                        <div class="info">
+                        <div class="ad"><p >Ad:</p><p class="name"></p></div>  
+                        <div class="tesvir"><p >Təsvir:</p><p class="none"></p></div>   
+                        <div class="qiymet"><p >Qiymət:</p><p class="price"></p></div>    
+                        <div class="yeni"><p >Yeni:</p><p class="new"></p></div>    
+                        <div class="telefon"><p >Telefon:</p><p class="phone"></p></div>    
+                        </div>
+                        <div class="btndiv"><button>Ətraflı</button></div>
+                    </div>
+                    <div id="detailsModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close-btn">&times;</span>
+                            <div class="modal-info">
+                                <div class="imgdiv"><img class="modal-img" src="" alt="Photo"></div><br>
+                                <div class="info">
+                                    <div class="ad"><p>Ad:</p><p class="modal-name"></p></div>  
+                                    <div class="tesvir"><p>Təsvir:</p><p class="modal-none"></p></div>   
+                                    <div class="qiymet"><p>Qiymət:</p><p class="modal-price"></p></div>    
+                                    <div class="yeni"><p>Yeni:</p><p class="modal-new"></p></div>    
+                                    <div class="telefon"><p>Telefon:</p><p class="modal-phone"></p></div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="buysell.js"></script>
+</body>
+</html>

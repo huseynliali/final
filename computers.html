@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="computers.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Computers</title>
+</head>
+<body>
+    <div style="margin-top: 20px;" class="d-flex border p-3 modalS">
+        <button id="goHome" style="width: 10%; margin-left: 20px;" type="button" class="btn btn-warning">Əsas səhifə</button>
+        <!-- Button trigger modal -->
+        <button style="width: 10%; margin-left: 20px;" type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Yeni PC
+        </button>
+        <div  class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content  ">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Yeni pc</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex">
+                        <div class="d-flex flex-column left w-50">
+                            <div class="input1 d-flex flex-column">
+                                <label for="">Kateqoriya:</label>
+                                <select style="height: 30px;" name="" id="input1">
+                                    <option value="Asus">Asus</option>
+                                    <option value="HP">HP</option>
+                                    <option value="Acer">Acer</option>
+                                    <option value="Dell">Dell</option>
+                                    <option value="Lenovo">Lenovo</option>
+                                    <option value="Golden">Samsung</option>
+                                    <option value="Macbook">Macbook</option>
+                                    <option value="Other">Digər</option>
+                                </select>
+                            </div>
+                            <div class="input1 d-flex flex-column">
+                                <label for="">Ad:</label>
+                                <input id="input2" data-error-id="nameError" type="text">
+                            </div>
+                            <div class="input1 d-flex flex-column">
+                                <label for="">Qiymət:</label>
+                                <input id="input3" data-error-id="nameError" type="text">
+                            </div>
+                            <div class="input1 d-flex flex-column">
+                                <label for="">Təsvir:</label>
+                                <input id="input4" data-error-id="nameError" type="text">
+                            </div>
+                            <div class="input1 d-flex flex-column">
+                                <label for="">Yeni?</label>
+                                <select style="height: 30px;" name="" id="input5">
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>>
+                                </select>
+                            </div>
+                            <div class="input1 d-flex flex-column">
+                                <label for="">Şəkil:</label>
+                                <input id="input6" data-error-id="nameError" type="text">
+                                <div class="showdiv">
+                                    <img style="position: absolute;" class="showimg" src="image.png" alt="Your photo">
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-left: 20px;" class=" d-flex flex-column left w-50">
+                            <div class="input1 d-flex flex-column ">
+                                <label for="">Əməli yaddaş(GB):</label>
+                                <input id="input7" data-error-id="nameError" type="number">
+                            </div>
+                            <div class="input1 d-flex flex-column ">
+                                <label for="">Mərkəzi prosessor:</label>
+                                <input id="input8" data-error-id="nameError" type="text">
+                            </div>
+                            <div class="input1 d-flex flex-column ">
+                                <label for="">Daimi yaddaş(GB):</label>
+                                <input id="input9" data-error-id="nameError" type="number">
+                            </div>
+                            <div class="input1 d-flex flex-column ">
+                                <label for="">Daimi yaddaş tipi:</label>
+                                <select style="height: 30px;" name="" id="input10">
+                                    <option value="Hard drive">Hard drive</option>
+                                    <option value="SSD">SSD</option>
+                                    <option value="Hard drive + SSD">Hard drive + SSD</option>
+                                </select>
+                            </div>
+                            <div class="input1 d-flex flex-column ">
+                                <label for="">Əmaliyat sistemi?</label>
+                                <select style="height: 30px;" name="" id="input11">
+                                    <option value="Wondows7">Windows7</option>
+                                    <option value="Wondows7">Windows8</option>
+                                    <option value="Wondows7">Windows10</option>
+                                    <option value="Wondows7">Windows11</option>
+                                    <option value="MacOS">MacOS</option>
+                                    <option value="Linux">Linux</option>
+                                </select>
+                            </div>
+                            <div class="input1 d-flex flex-column ">
+                                <label for="">Video Kart</label>
+                                <input id="input12" data-error-id="nameError" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h2">
+                        <h2 id="error-message" style="color: red;"> Bütün sahələri doldurun</h2>
+                    </div>
+                    <div style="justify-content: flex-start;" class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bağla</button>
+                        <button id="newPc" type="button" class="btn btn-primary">Yeni pc</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content  ">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Dəyişiklər əlavə et</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex">
+                        <div class="d-flex flex-column left w-50">
+                            <div class="input1 d-flex flex-column">
+                                <label for="">Kateqoriya:</label>
+                                <select style="height: 30px;" name="" id="input13">
+                                    <option value="Asus">Asus</option>
+                                    <option value="HP">HP</option>
+                                    <option value="Acer">Acer</option>
+                                    <option value="Dell">Dell</option>
+                                    <option value="Lenovo">Lenovo</option>
+                                    <option value="Golden">Golden</option>
+                                    <option value="Macbook">Macbook</option>
+                                    <option value="Other">Gigər</option>
+                                </select>
+                            </div>
+                            <div class="input1 d-flex flex-column">
+                                <label for="">Ad:</label>
+                                <input id="input14" type="text">
+                            </div>
+                            <div class="input1 d-flex flex-column">
+                                <label for="">Qiymət:</label>
+                                <input id="input15" type="text">
+                            </div>
+                            <div class="input1 d-flex flex-column">
+                                <label for="">Təsvir:</label>
+                                <input id="input16" type="text">
+                            </div>
+                            <div class="input1 d-flex flex-column">
+                                <label for="">Yeni?</label>
+                                <select style="height: 30px;" name="" id="input17">
+                                    <option value="Yes">Bəli</option>
+                                    <option value="No">Xeyr</option>>
+                                </select>
+                            </div>
+                            <div class="input1 d-flex flex-column">
+                                <label for="">Şəkil:</label>
+                                <input id="input18" type="text">
+                            </div>
+                        </div>
+                        <div style="margin-left: 20px;" class=" d-flex flex-column left w-50">
+                            <div class="input1 d-flex flex-column ">
+                                <label for="">Əməli yaddaş(GB)</label>
+                                <input id="input19" type="number">
+                            </div>
+                            <div class="input1 d-flex flex-column ">
+                                <label for="">Mərkəzi prosessor:</label>
+                                <input id="input20" type="text">
+                            </div>
+                            <div class="input1 d-flex flex-column ">
+                                <label for="">Daimi yaddaş(GB):</label>
+                                <input id="input21" type="number">
+                            </div>
+                            <div class="input1 d-flex flex-column ">
+                                <label for="">Yaddaş tipi:</label>
+                                <select style="height: 30px;" name="" id="input22">
+                                    <option value="Hard drive">Hard drive</option>
+                                    <option value="SSD">SSD</option>
+                                    <option value="Hard drive + SSD">Hard drive + SSD</option>
+                                </select>
+                            </div>
+                            <div class="input1 d-flex flex-column ">
+                                <label for="">Sistem?</label>
+                                <select style="height: 30px;" name="" id="input23">
+                                    <option value="Wondows7">Windows7</option>
+                                    <option value="Wondows7">Windows8</option>
+                                    <option value="Wondows7">Windows10</option>
+                                    <option value="Wondows7">Windows11</option>
+                                    <option value="Wondows7">Windows12</option>
+                                    <option value="MacOS">MacOS</option>
+                                    <option value="Linux">Linux</option>
+                                </select>
+                            </div>
+                            <div class="input1 d-flex flex-column ">
+                                <label for="">Video Kart</label>
+                                <input id="input24" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="justify-content: flex-start;" class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bağla</button>
+                        <button id="sCh" type="button" class="btn btn-primary">Dəyişikləri təsdiqlə</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 20px;" class="border p-3">
+        <div class="cantainer d-flex justify-content-between">
+            <div class=" w-100 conainer-fluid d-flex align-items-center">
+                <span style="margin-right: 5px;">Show</span>
+                <select style="margin-right: 5px;width: 10%;" class="form-select " aria-label="Default select example">
+                    <option value="5">5</option>
+                </select>
+                <span style="margin-right: 5px;">entries</span>
+            </div>
+            <div class="justify-content-end w-100 conainer-fluid d-flex align-items-center">
+                <span style="margin-right: 5px;">Axtarış:</span>
+                <div style="width: 20%;" class="input-group flex-nowrap">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Ad:</th>
+                    <th scope="col">Qiymət:</th>
+                    <th scope="col">Şəkil:</th>
+                    <th scope="col">İş:</th>
+                </tr>
+            </thead>
+            <tbody id="bodyB">
+                <!-- <tr>
+                    <td style="width: 20%;" ></td>
+                    <td style="width: 20%;" ></td>
+                    <td style="width: 20%;" ></td>
+                    <td id="touch" style="width: 20%;" >
+                        <button></button>
+                    </td>
+                    <td style="width: 20%;" >
+                        <button>Remove</button>
+                        <button>Costumize</button>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xx">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">Şəkil:</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img id="modalImage" src="" alt="Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="computers.js"></script>
+</body>
+</html>

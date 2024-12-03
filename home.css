@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.slideparent {
+    width: 99vw;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+.slide {
+    width: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item img {
+    width: 70%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+} 
+.buysell {
+    background-color: rgb(252, 189, 71);
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    width: 240px;
+    height: 40px;
+    transition: 0.5s;
+}
+.login {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(53, 157, 53);
+    padding: 7px;
+    color: white;
+    transition: 0.5s;
+}
+.buttons {
+    width: 99vw;
+    position: absolute;
+    margin-left: -10px;
+    border-top: solid 1px lightgray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    height: 10px;
+    display:flex;
+    margin-top: 10px;
+}
+.divh1 {
+    border-top: solid 1px lightgray;
+    border-bottom: solid 1px lightgray;
+    position: absolute;
+    margin-top: 91px;
+    width: 98vw;
+    margin-left: 1vw;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.user {
+    margin-left: 20px;
+}
+.buysell:hover {
+    cursor: pointer;
+    width: 245px;
+    height: 45px;
+    background-color: rgb(209, 158, 62);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.19);
+}
+.login:hover {
+    cursor: pointer;
+    width: 157.23px;
+    height: 45px;
+    background-color: rgb(40, 121, 40);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.19);
+}
+.logout {
+    background-color: red;
+    color: white;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    transition: 0.5s;
+    display: none;
+}
+.logout:hover {
+    cursor: pointer;
+    width: 157.23px;
+    height: 45px;
+    background-color: rgb(187, 28, 28);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.19);
+}
+.buttons button {
+    margin-left: 15px;
+}
+.success {
+    background-color: rgb(129, 207, 129);
+    opacity: 0.8;
+    width: 99vw;
+    height: 10vh;
+    color: rgb(0, 40, 0);
+    display: flex;
+    align-items: center;
+    border-radius: 5px; 
+    display: none; 
+}
+.computers {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    width: 157px;
+    background-color: rgb(64, 64, 234);;
+    color: white;
+    transition: 0.5s;
+    display: none;
+}
+.computers:hover {
+    background-color: rgb(6, 6, 192);
+    height: 45px;
+    width: 162px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
