@@ -196,3 +196,16 @@ window.addEventListener('click', function(event) {
         modal.style.display = 'none';
     }
 });
+document.querySelectorAll('.list button').forEach(button => {
+    button.addEventListener('click', function () {
+        const selectedBrand = button.textContent.trim().toLowerCase(); // Имя кнопки
+        document.querySelectorAll('.comps .son').forEach(div => {
+            const divName = div.querySelector('.name').textContent.trim().toLowerCase(); // Имя из дива
+            if (divName === selectedBrand) {
+                div.style.display = 'block'; // Показываем див
+            } else {
+                div.style.display = 'none'; // Скрываем див
+            }
+        });
+    });
+});
