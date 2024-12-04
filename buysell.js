@@ -56,7 +56,7 @@ lenovo.addEventListener("click",function () {
     pphone.forEach(phone => phone.textContent = "077-709-7481");
 })
 mac.addEventListener("click",function () {
-    img.forEach(img => img.src = "https://th.bing.com/th/id/OIP.t7ndy7X5vjLN9yM79zn_2AHaHa?rs=1&pid=ImgDetMain");
+    img.forEach(img => img.src = "https://th.bing.com/th/id/OIP.azzlm8A_pHStfqLpJ9u8SwHaE8?w=1800&h=1200&rs=1&pid=ImgDetMain");
     pname.forEach(name => name.textContent = "MacBook");
     pnone.forEach(none => none.textContent = "Yoxdur");
     pprice.forEach(price => price.textContent = "900$");
