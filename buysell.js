@@ -196,9 +196,20 @@ window.addEventListener('click', function(event) {
         modal.style.display = 'none';
     }
 });
-let namme = localStorage.getItem("pc_1_name");
-if (namme) {
-    console.log(namme);
-} else {
-    console.log("Значение не найдено");
+function showAsus() {
+    let pcs = document.querySelectorAll('.son');
+    pcs.forEach(pc => {
+        let name = pc.querySelector('.name').textContent;
+        if (name === "Asus") {
+            pc.style.display = "block";  // Показываем Asus
+        }
+    });
 }
+
+// Кнопка для показа Asus
+document.querySelector('.asus').addEventListener('click', showAsus);
+
+// Прочие ноутбуки из pcs
+pcs.forEach(pc => {
+    createPcElement(pc);
+});
