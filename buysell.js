@@ -64,8 +64,8 @@ mac.addEventListener("click",function () {
     pphone.forEach(phone => phone.textContent = "070-589-1001");
 })
 samsung.addEventListener("click",function () {
-    img.forEach(img => img.src = "https://www.bhphotovideo.com/images/images2500x2500/samsung_np900x5n_k01us_15_6_notebook_9_light_1304856.jpg");
-    pname.forEach(name => name.textContent = "Samsung");
+    img.forEach(img => img.src = "https://th.bing.com/th/id/OIP.S7llp33EaabW4Hh8UCBo3AHaFI?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+    pname.forEach(name => name.textContent = "Golden");
     pnone.forEach(none => none.textContent = "Yoxdur");
     pprice.forEach(price => price.textContent = "2900$");
     pnew.forEach(newItem => newItem.textContent = "Bəli");
