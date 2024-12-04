@@ -192,14 +192,12 @@ function createPcElement(id) {
     infoDiv.appendChild(telefonDiv);
 
     div.appendChild(infoDiv);
-
-    // Добавляем кнопку "Sebete elave et"
     let btnDiv = document.createElement('div');
     btnDiv.classList.add('btndiv');
     let addButton = document.createElement('button');
     addButton.textContent = 'Sebete elave et';
     addButton.addEventListener('click', () => {
-        addToCart(id); // Функция добавления в корзину
+        addToCart(id); 
     });
     btnDiv.appendChild(addButton);
     div.appendChild(btnDiv);
@@ -208,18 +206,15 @@ function createPcElement(id) {
 }
 
 function addToCart(id) {
-    // Получаем товар из localStorage
     let name = localStorage.getItem(`pc_${id}_name`);
     let price = localStorage.getItem(`pc_${id}_price`);
     let image = localStorage.getItem(`pc_${id}_image`);
     let phone = localStorage.getItem(`pc_${id}_phone`);
-
-    // Сохраняем товар в корзину
     let cart = JSON.parse(localStorage.getItem('cart') || '[]');
     cart.push({ id, name, price, image, phone });
     localStorage.setItem('cart', JSON.stringify(cart));
 
-    alert(`${name} əlavə edildi!`); // Сообщение пользователю
+    alert(`${name} əlavə edildi!`); 
 }
 
 let pcs = JSON.parse(localStorage.getItem('pcs') || '[]');
@@ -336,3 +331,7 @@ document.querySelectorAll('.add-to-cart').forEach((button, index) => {
 });
 document.querySelector('.cart').style.display = cart.length > 0 ? 'block' : 'none';
 updateCartUI();
+document.querySelector('.clear-cart').addEventListener('click', function() {
+    localStorage.removeItem('cart'); 
+    renderCart();
+});
