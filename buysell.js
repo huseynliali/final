@@ -196,3 +196,9 @@ window.addEventListener('click', function(event) {
         modal.style.display = 'none';
     }
 });
+let namme = localStorage.getItem("pc_1_name");
+if (namme) {
+    console.log(namme);
+} else {
+    console.log("Значение не найдено");
+}
