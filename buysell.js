@@ -89,6 +89,63 @@ function setActive(button) {
     buttons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
 }
+// function createPcElement(id) {
+//     let name = localStorage.getItem(`pc_${id}_name`);
+//     let price = localStorage.getItem(`pc_${id}_price`);
+//     let image = localStorage.getItem(`pc_${id}_image`);
+//     let neww = localStorage.getItem(`pc_${id}_yeni`);
+//     let phone = localStorage.getItem(`pc_${id}_phone`);
+//     let div = document.createElement('div');
+//     div.classList.add('son');
+//     let imgDiv = document.createElement('div');
+//     imgDiv.classList.add('imgdiv');
+//     let img = document.createElement('img');
+//     img.classList.add('img');
+//     img.src = image || 'image.png'; 
+//     img.alt = 'Photo';
+//     imgDiv.appendChild(img);
+//     div.appendChild(imgDiv);
+//     let infoDiv = document.createElement('div');
+//     infoDiv.classList.add('info');
+
+//     let adDiv = document.createElement('div');
+//     adDiv.classList.add('ad');
+//     adDiv.innerHTML = `<p>Ad:</p><p class="name">${name}</p>`;
+//     infoDiv.appendChild(adDiv);
+
+//     let tesvirDiv = document.createElement('div');
+//     tesvirDiv.classList.add('tesvir');
+//     tesvirDiv.innerHTML = `<p>Təsvir:</p><p class="none">${neww}</p>`;
+//     infoDiv.appendChild(tesvirDiv);
+
+//     let qiymetDiv = document.createElement('div');
+//     qiymetDiv.classList.add('qiymet');
+//     qiymetDiv.innerHTML = `<p>Qiymət:</p><p class="price">${price}</p>`;
+//     infoDiv.appendChild(qiymetDiv);
+
+//     let yeniDiv = document.createElement('div');
+//     yeniDiv.classList.add('yeni');
+//     yeniDiv.innerHTML = `<p>Yeni:</p><p class="new">${neww}</p>`;
+//     infoDiv.appendChild(yeniDiv);
+
+//     let telefonDiv = document.createElement('div');
+//     telefonDiv.classList.add('telefon');
+//     telefonDiv.innerHTML = `<p>Telefon:</p><p class="phone">${phone}</p>`;
+//     infoDiv.appendChild(telefonDiv);
+
+//     div.appendChild(infoDiv);
+//     let btnDiv = document.createElement('div');
+//     btnDiv.classList.add('btndiv');
+//     let button = document.createElement('button');
+//     button.textContent = 'Ətraflı';
+//     btnDiv.appendChild(button);
+//     div.appendChild(btnDiv);
+//     document.querySelector('.comps').appendChild(div);
+// }
+// let pcs = JSON.parse(localStorage.getItem('pcs') || '[]');
+// pcs.forEach(pc => {
+//     createPcElement(pc.id);
+// });
 function createPcElement(id) {
     let name = localStorage.getItem(`pc_${id}_name`);
     let price = localStorage.getItem(`pc_${id}_price`);
@@ -105,6 +162,7 @@ function createPcElement(id) {
     img.alt = 'Photo';
     imgDiv.appendChild(img);
     div.appendChild(imgDiv);
+
     let infoDiv = document.createElement('div');
     infoDiv.classList.add('info');
 
@@ -134,14 +192,36 @@ function createPcElement(id) {
     infoDiv.appendChild(telefonDiv);
 
     div.appendChild(infoDiv);
+
+    // Добавляем кнопку "Sebete elave et"
     let btnDiv = document.createElement('div');
     btnDiv.classList.add('btndiv');
-    let button = document.createElement('button');
-    button.textContent = 'Ətraflı';
-    btnDiv.appendChild(button);
+    let addButton = document.createElement('button');
+    addButton.textContent = 'Sebete elave et';
+    addButton.addEventListener('click', () => {
+        addToCart(id); // Функция добавления в корзину
+    });
+    btnDiv.appendChild(addButton);
     div.appendChild(btnDiv);
+
     document.querySelector('.comps').appendChild(div);
 }
+
+function addToCart(id) {
+    // Получаем товар из localStorage
+    let name = localStorage.getItem(`pc_${id}_name`);
+    let price = localStorage.getItem(`pc_${id}_price`);
+    let image = localStorage.getItem(`pc_${id}_image`);
+    let phone = localStorage.getItem(`pc_${id}_phone`);
+
+    // Сохраняем товар в корзину
+    let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+    cart.push({ id, name, price, image, phone });
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    alert(`${name} əlavə edildi!`); // Сообщение пользователю
+}
+
 let pcs = JSON.parse(localStorage.getItem('pcs') || '[]');
 pcs.forEach(pc => {
     createPcElement(pc.id);
