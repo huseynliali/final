@@ -198,14 +198,61 @@ window.addEventListener('click', function(event) {
 });
 document.querySelectorAll('.list button').forEach(button => {
     button.addEventListener('click', function () {
-        const selectedBrand = button.textContent.trim().toLowerCase(); // Имя кнопки
+        const selectedBrand = button.textContent.trim().toLowerCase(); 
         document.querySelectorAll('.comps .son').forEach(div => {
-            const divName = div.querySelector('.name').textContent.trim().toLowerCase(); // Имя из дива
+            const divName = div.querySelector('.name').textContent.trim().toLowerCase(); 
             if (divName === selectedBrand) {
-                div.style.display = 'block'; // Показываем див
+                div.style.display = 'block';
             } else {
-                div.style.display = 'none'; // Скрываем див
+                div.style.display = 'none'; 
             }
         });
     });
 });
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+const cartElement = document.querySelector('.cart');
+const cartItemsElement = document.getElementById('cart-items');
+const cartTotalElement = document.getElementById('cart-total');
+
+function updateCartUI() {
+    cartItemsElement.innerHTML = '';
+    let total = 0;
+
+    cart.forEach((item, index) => {
+        const li = document.createElement('li');
+        li.textContent = `${item.name} - ${item.price}₼`;
+        
+        // Кнопка удаления
+        const removeBtn = document.createElement('button');
+        removeBtn.textContent = 'Удалить';
+        removeBtn.onclick = () => {
+            cart.splice(index, 1);
+            saveCart();
+            updateCartUI();
+        };
+        
+        li.appendChild(removeBtn);
+        cartItemsElement.appendChild(li);
+
+        total += parseFloat(item.price);
+    });
+
+    cartTotalElement.textContent = `Итого: ${total}₼`;
+}
+function saveCart() {
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+document.querySelectorAll('.add-to-cart').forEach((button, index) => {
+    button.addEventListener('click', () => {
+        const productElement = button.closest('.son');
+        const name = productElement.querySelector('.name').textContent || 'Неизвестный товар';
+        const price = parseFloat(productElement.querySelector('.price').textContent || '0');
+
+        cart.push({ name, price });
+        saveCart();
+        updateCartUI();
+        cartElement.style.display = 'block';
+    });
+});
+document.querySelector('.cart').style.display = cart.length > 0 ? 'block' : 'none';
+updateCartUI();

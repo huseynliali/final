@@ -26,3 +26,16 @@ select {
     height: 150px;
     margin-top: 10px;
 }
+.cart {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: white;
+    width: 300px;
+    display: none;
+}
+.cart h2 {
+    margin-top: 0;
+}
