@@ -13,23 +13,23 @@
         <div class="main">
             <div class="success">Hesab yaradıldı!</div>
             <label for="name">Ad:</label>
-            <input required type="text" id="name">
+            <input onkeyup="validate()" required type="text" id="name">
             <p id="name-error" class="error-message"></p>
 
             <label for="phone">Telefon:</label>
-            <input placeholder="000-000-0000" required type="text" id="phone">
+            <input onkeyup="validate()" placeholder="000-000-0000" required type="text" id="phone">
             <p id="phone-error" class="error-message"></p>
 
             <label for="username">İstifadəçi adı:</label>
-            <input required type="text" id="username">
+            <input onkeyup="validate()" required type="text" id="username">
             <p id="username-error" class="error-message"></p>
 
             <label for="password">Şifrə:</label>
-            <input required type="password" id="password">
+            <input onkeyup="validate()" required type="password" id="password">
             <p id="password-error" class="error-message"></p>
 
             <label for="confirm-password">Şifrənizi təsdiqləyin:</label>
-            <input required type="password" id="confirm-password">
+            <input onkeyup="validate()" required type="password" id="confirm-password">
             <p id="confirm-password-error" class="error-message"></p>
         </div>
         <div class="create">
