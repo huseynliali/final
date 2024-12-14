@@ -190,3 +190,7 @@ button:hover {
 .modal-info p {
     font-size: 16px;
 }
+.modal-img {
+    width: 315px;
+    height: 266px;
+}
