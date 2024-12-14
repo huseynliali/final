@@ -16,7 +16,7 @@ goHome.addEventListener("click",function () {
     window.location.href = "home.html"
 })
 asus.addEventListener("click", function () {
-    img.forEach(img => img.src = "https://www.pricerunner.com/product/3015692145/ASUS-ExpertBook-B9-OLED.jpg");
+    img.forEach(img => img.src = "https://laptopmedia.com/wp-content/uploads/2023/01/1-18-e1672919024436.jpg");
     pname.forEach(name => name.textContent = "Asus");
     pnone.forEach(none => none.textContent = "Yoxdur");
     pprice.forEach(price => price.textContent = "1200$");
