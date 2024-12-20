@@ -12,97 +12,6 @@ let pnew = document.querySelectorAll(".new");
 let pphone = document.querySelectorAll(".phone");
 let img = document.querySelectorAll(".img");
 let goHome = document.querySelector(".homepage")
-asus.addEventListener('click', function() {
-    let sons = document.querySelectorAll(".son");
-    sons.forEach(function(son) {
-        son.style.display = "none";
-    });
-    document.getElementById('loader').style.display = 'inline-block';
-    setTimeout(function() {
-        document.getElementById('loader').style.display = 'none';
-        sons.forEach(function(son) {
-            son.style.display = "block";
-        });
-    }, 1000);
-});
-hp.addEventListener('click', function() {
-    let sons = document.querySelectorAll(".son");
-    sons.forEach(function(son) {
-        son.style.display = "none";
-    });
-    document.getElementById('loader').style.display = 'inline-block';
-    setTimeout(function() {
-        document.getElementById('loader').style.display = 'none';
-        sons.forEach(function(son) {
-            son.style.display = "block";
-        });
-    }, 1000);
-});
-acer.addEventListener('click', function() {
-    let sons = document.querySelectorAll(".son");
-    sons.forEach(function(son) {
-        son.style.display = "none";
-    });
-    document.getElementById('loader').style.display = 'inline-block';
-    setTimeout(function() {
-        document.getElementById('loader').style.display = 'none';
-        sons.forEach(function(son) {
-            son.style.display = "block";
-        });
-    }, 1000);
-});
-dell.addEventListener('click', function() {
-    let sons = document.querySelectorAll(".son");
-    sons.forEach(function(son) {
-        son.style.display = "none";
-    });
-    document.getElementById('loader').style.display = 'inline-block';
-    setTimeout(function() {
-        document.getElementById('loader').style.display = 'none';
-        sons.forEach(function(son) {
-            son.style.display = "block";
-        });
-    }, 1000);
-});
-lenovo.addEventListener('click', function() {
-    let sons = document.querySelectorAll(".son");
-    sons.forEach(function(son) {
-        son.style.display = "none";
-    });
-    document.getElementById('loader').style.display = 'inline-block';
-    setTimeout(function() {
-        document.getElementById('loader').style.display = 'none';
-        sons.forEach(function(son) {
-            son.style.display = "block";
-        });
-    }, 1000);
-});
-mac.addEventListener('click', function() {
-    let sons = document.querySelectorAll(".son");
-    sons.forEach(function(son) {
-        son.style.display = "none";
-    });
-    document.getElementById('loader').style.display = 'inline-block';
-    setTimeout(function() {
-        document.getElementById('loader').style.display = 'none';
-        sons.forEach(function(son) {
-            son.style.display = "block";
-        });
-    }, 1000);
-});
-samsung.addEventListener('click', function() {
-    let sons = document.querySelectorAll(".son");
-    sons.forEach(function(son) {
-        son.style.display = "none";
-    });
-    document.getElementById('loader').style.display = 'inline-block';
-    setTimeout(function() {
-        document.getElementById('loader').style.display = 'none';
-        sons.forEach(function(son) {
-            son.style.display = "block";
-        });
-    }, 1000);
-});
 
 goHome.addEventListener("click",function () {
     window.location.href = "home.html"
@@ -303,3 +212,94 @@ document.querySelectorAll('.list button').forEach(button => {
     });
 });
 
+asus.addEventListener('click', function() {
+    let sons = document.querySelectorAll(".son");
+    sons.forEach(function(son) {
+        son.style.display = "none";
+    });
+    document.getElementById('loader').style.display = 'inline-block';
+    setTimeout(function() {
+        document.getElementById('loader').style.display = 'none';
+        sons.forEach(function(son) {
+            son.style.display = "block";
+        });
+    }, 1000);
+});
+hp.addEventListener('click', function() {
+    let sons = document.querySelectorAll(".son");
+    sons.forEach(function(son) {
+        son.style.display = "none";
+    });
+    document.getElementById('loader').style.display = 'inline-block';
+    setTimeout(function() {
+        document.getElementById('loader').style.display = 'none';
+        sons.forEach(function(son) {
+            son.style.display = "block";
+        });
+    }, 1000);
+});
+acer.addEventListener('click', function() {
+    let sons = document.querySelectorAll(".son");
+    sons.forEach(function(son) {
+        son.style.display = "none";
+    });
+    document.getElementById('loader').style.display = 'inline-block';
+    setTimeout(function() {
+        document.getElementById('loader').style.display = 'none';
+        sons.forEach(function(son) {
+            son.style.display = "block";
+        });
+    }, 1000);
+});
+dell.addEventListener('click', function() {
+    let sons = document.querySelectorAll(".son");
+    sons.forEach(function(son) {
+        son.style.display = "none";
+    });
+    document.getElementById('loader').style.display = 'inline-block';
+    setTimeout(function() {
+        document.getElementById('loader').style.display = 'none';
+        sons.forEach(function(son) {
+            son.style.display = "block";
+        });
+    }, 1000);
+});
+lenovo.addEventListener('click', function() {
+    let sons = document.querySelectorAll(".son");
+    sons.forEach(function(son) {
+        son.style.display = "none";
+    });
+    document.getElementById('loader').style.display = 'inline-block';
+    setTimeout(function() {
+        document.getElementById('loader').style.display = 'none';
+        sons.forEach(function(son) {
+            son.style.display = "block";
+        });
+    }, 1000);
+});
+mac.addEventListener('click', function() {
+    let sons = document.querySelectorAll(".son");
+    sons.forEach(function(son) {
+        son.style.display = "none";
+    });
+    document.getElementById('loader').style.display = 'inline-block';
+    setTimeout(function() {
+        document.getElementById('loader').style.display = 'none';
+        sons.forEach(function(son) {
+            son.style.display = "block";
+        });
+    }, 1000);
+});
+samsung.addEventListener('click', function() {
+    let sons = document.querySelectorAll(".son");
+    sons.forEach(function(son) {
+        son.style.display = "none";
+    });
+    document.getElementById('loader').style.display = 'inline-block';
+    setTimeout(function() {
+        document.getElementById('loader').style.display = 'none';
+        sons.forEach(function(son) {
+            son.style.display = "block";
+        });
+    }, 1000);
+});
